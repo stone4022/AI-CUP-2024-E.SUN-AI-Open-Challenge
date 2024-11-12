@@ -33,7 +33,7 @@
 
 1. **複製專案**：
    ```bash
-   git clone https://github.com/your-repo/document-retrieval-system.git
+   git clone https://github.com/stone4022/AI-CUP-2024-E.SUN-AI-Open-Challenge.git
    cd AI-CUP-2024-E.SUN-AI-Open-Challenge
    ```
 
