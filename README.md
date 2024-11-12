@@ -34,7 +34,7 @@
 1. **複製專案**：
    ```bash
    git clone https://github.com/your-repo/document-retrieval-system.git
-   cd document-retrieval-system
+   cd AI-CUP-2024-E.SUN-AI-Open-Challenge
    ```
 
 2. **安裝依賴項**：
