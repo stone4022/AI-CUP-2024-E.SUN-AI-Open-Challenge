@@ -1,4 +1,4 @@
-
+![image](https://github.com/user-attachments/assets/5faf5e88-0ac4-4453-9780-0eace5b24a37)
 # AI CUP 2024玉山人工智慧公開挑戰賽
 
 此專案提供文件檢索系統用於參加AI CUP 2024玉山人工智慧公開挑戰賽初賽，透過 OpenAI API 從預處理過的資料集中，根據問題識別最相關的文件。系統會處理儲存在特定目錄中的文件，轉換成字典格式用於檢索，最終透過官方提供的問題集生成對應格式的JSON檔。
@@ -52,6 +52,11 @@
 
 4. **設定 OpenAI API 金鑰**：
    將 `main.py` 中的 `YOUR_API_KEY` 替換為您的實際 OpenAI API 金鑰。
+
+5. **使用模型和資源**：
+   使用 OpenAI API gpt-4o 模型，每輪問題九百題呼叫 API 的費用約為 25 美金。
+   ![image](https://github.com/user-attachments/assets/871ca44b-14d1-4f43-8610-74082d15b52f)
+
 ## 使用方式
 
 執行檢索系統，使用以下指令：
