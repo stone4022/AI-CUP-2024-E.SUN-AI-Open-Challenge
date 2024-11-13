@@ -1,7 +1,7 @@
 
 # AI CUP 2024玉山人工智慧公開挑戰賽
 
-此專案提供一個文件檢索系統用於參加AI CUP 2024玉山人工智慧公開挑戰賽初賽，透過 OpenAI API 從預處理過的資料集中，根據使用者的問題識別最相關的文件。系統會處理儲存在特定目錄中的文件，轉換成字典格式用於檢索，最終透過官方提供的問題集生成對應格式的JSON檔。
+此專案提供文件檢索系統用於參加AI CUP 2024玉山人工智慧公開挑戰賽初賽，透過 OpenAI API 從預處理過的資料集中，根據問題識別最相關的文件。系統會處理儲存在特定目錄中的文件，轉換成字典格式用於檢索，最終透過官方提供的問題集生成對應格式的JSON檔。
 
 ## 目錄
 
@@ -17,12 +17,13 @@
 ```
 .
 ├── Preprocess/
-│   └── data_preprocess.py      # 加載和處理文件的腳本
+│   └── data_preprocess.py                # 加載和處理文件的腳本
+│   └── exploratory_data_analysis.py      # 確認 PDF 文件內容性質(純文字、純圖片、混合)
 ├── Model/
-│   └── retrieval.py            # 使用 OpenAI API 的檢索模型
-├── main.py                     # 執行檢索的主程式
-├── questions_preliminary.json  # 包含使用者問題和相關元數據的 JSON 文件
-└── requirements.txt            # 依賴項列表
+│   └── retrieval.py                      # 使用 OpenAI API 的檢索模型
+├── main.py                               # 執行檢索的主程式
+├── questions_preliminary.json            # 包含使用者問題和相關元數據的 JSON 文件
+└── requirements.txt                      # 依賴項列表
 ```
 
 - **Preprocess**：包含 `data_preprocess.py` 腳本，用於加載和處理文件。
@@ -37,15 +38,20 @@
    cd AI-CUP-2024-E.SUN-AI-Open-Challenge
    ```
 
-2. **安裝依賴項**：
+2. **下載處理後的資料集**：
+
+   由於原始資料集中的部分 PDF 僅包含圖片，本專案已對其中內容進行手動文字提取，將其轉換成可檢索的 `txt` 和 `csv` 格式。請先從以下雲端連結下載處理後的資料集 `datasets.rar`，並將其解壓縮至專案的主目錄：
+   
+   [由 Google 雲端下載處理後的資料集](https://drive.google.com/file/d/1YpfDvjFP1nTzJXdlUl8oA5AUrWw5VIla/view?usp=drive_link)
+
+3. **安裝依賴項**：
    使用 `requirements.txt` 安裝所需套件：
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **設定 OpenAI API 金鑰**：
+4. **設定 OpenAI API 金鑰**：
    將 `main.py` 中的 `YOUR_API_KEY` 替換為您的實際 OpenAI API 金鑰。
-
 ## 使用方式
 
 執行檢索系統，使用以下指令：
@@ -110,5 +116,5 @@ Processing rows: 100%|███████████████████�
 
 ## 注意事項
 
-- 確保您的 OpenAI API 金鑰有效，並且有足夠的配額來處理請求。
+- 確保 OpenAI API 金鑰有效，並且有足夠的配額來處理請求。
 - 本專案採用非同步處理，以便在處理大型數據集時提高效率。

@@ -4,3 +4,4 @@ openai==1.52.0
 langchain==0.3.3
 langchain-community==0.3.2
 pypdf==5.0.1
+natsort==8.4.0
