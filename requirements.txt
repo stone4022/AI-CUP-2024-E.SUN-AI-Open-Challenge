@@ -1,3 +1,4 @@
+# Python 3.11
 OpenCC==1.1.9
 openai==1.52.0
 langchain==0.3.3
