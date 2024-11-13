@@ -1,7 +1,8 @@
 
 # 數據預處理
 
-此資料夾包含數據預處理相關腳本，專為文件檢索競賽設計。主要包括 `data_preprocess.py` 和 `exploratory_data_analysis.py` 兩個腳本，分別負責文件預處理和內容分析。
+此資料夾包含數據預處理相關腳本，專為文件檢索競賽設計。
+主要包括 `data_preprocess.py` 和 `exploratory_data_analysis.py` 兩個腳本，分別負責文件預處理和內容分析。
 
 ## 功能簡介
 
@@ -10,7 +11,7 @@
 此腳本的主要功能是分析 PDF 文件中的頁面內容性質，並對其進行分類。
 
 `exploratory_data_analysis.py` 腳本執行以下操作：
-- 分析指定資料夾中的 PDF 文件，並逐頁分類頁面內容。
+- 分析原始資料集中的 PDF 文件，並逐頁分類頁面內容。
   - **純文字頁面**：僅包含文字內容的頁面。
   - **純圖片頁面**：僅包含圖片的頁面。
   - **圖文混合頁面**：同時包含文字和圖片的頁面。
@@ -24,7 +25,7 @@
 此腳本專為多種文件格式的資料預處理而設計，使資料一致且便於檢索。支援的文件格式包括 PDF、TXT 和 CSV。
 
 `data_preprocess.py` 腳本執行以下操作：
-- 從指定資料夾（如 `finance` 和 `insurance`）中加載文件。
+- 從 [人工轉換後資料集](https://drive.google.com/file/d/1YpfDvjFP1nTzJXdlUl8oA5AUrWw5VIla/view?usp=drive_link) 中加載文件。
 - 將所有文字從簡體轉換為繁體，保持一致性。
 - 處理不同文件類型的方式如下：
   - **PDF**：提取並串聯頁面中的文字內容。
