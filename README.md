@@ -42,7 +42,7 @@
 
    由於原始資料集中的部分 PDF 僅包含圖片，本專案已對其中內容進行手動文字提取，將其轉換成可檢索的 `txt` 和 `csv` 格式。請先從以下雲端連結下載處理後的資料集 `datasets.rar`，並將其解壓縮至專案的主目錄：
    
-   [由 Google 雲端下載處理後的資料集](https://drive.google.com/file/d/1YpfDvjFP1nTzJXdlUl8oA5AUrWw5VIla/view?usp=drive_link)
+   [由 Google 雲端下載](https://drive.google.com/file/d/1YpfDvjFP1nTzJXdlUl8oA5AUrWw5VIla/view?usp=drive_link)
 
 3. **安裝依賴項**：
    使用 `requirements.txt` 安裝所需套件：
