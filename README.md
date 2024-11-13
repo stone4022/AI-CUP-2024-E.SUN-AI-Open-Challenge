@@ -54,7 +54,8 @@
 
 5. **使用模型和資源**：
    使用 OpenAI API gpt-4o 模型，每輪問題九百題呼叫 API 的費用約為 25 美金。
-   ![image](https://github.com/user-attachments/assets/871ca44b-14d1-4f43-8610-74082d15b52f)
+   ![image](https://github.com/user-attachments/assets/a9c087a0-1676-414b-9713-4cd0faf8da1d)
+   ![image](https://github.com/user-attachments/assets/991fb48d-2b07-4e2f-9b72-c61166e196f8)
 
 ## 使用方式
 
